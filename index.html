@@ -1,0 +1,29 @@
+<!doctype html>
+<head>
+	<title>Latlong</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFMiYyC_K_xvBa1JVXhaHItrngb1Ehzkg"></script>
+  <script src="map.js"></script>
+</head>
+<body>
+
+	<div class="control-bar">
+		<b>Marker status:</b>
+    <div id="markerStatus"><i>Click and drag the marker.</i></div>
+    
+    <b>Current position:</b>
+    <div id="info"></div>
+    
+    <b>Closest matching address:</b>
+    <div id="address"></div>
+
+    <input id="s" type="textbox" value="Sydney, NSW">
+    <input type="button" value="Search" onclick="searchPlace();">
+
+	</div>
+
+	<div id="map-canvas"></div>
+
+</body>
+</html>
